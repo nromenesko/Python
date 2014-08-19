@@ -1,0 +1,21 @@
+Built with Python 3.4
+
+Dependencies:   Uses youtube-dl to download videos and FFMPEG to extract audio.
+
+Contents:
+    
+    downloader.py
+    -------------
+    Interfaces with youtube-dl to download either a single URL or a line-separated 
+    list of URLS. Uses FFMPEG to convert video to audio.
+    
+    bookmark_parse.py
+    -----------------------
+    Extract all YouTube URLs from an HTML file (e.g. An exported bookmarks file in Firefox)
+    To extract: 
+                1. bookmark_parse.py will output a line-separated list of YouTube URLs. 
+                2. File will be downloaded as youtube_list.txt in the current working directory
+                
+    Example: "py bookmark_parse.py 'path to bookmark file'" - remove double and single quotes before running.
+
+    
